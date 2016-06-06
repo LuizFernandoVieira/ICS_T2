@@ -17,13 +17,11 @@ public class Tocador {
 		melodias = new Melodias();
 		mSelecionada = melodias.melodia1;
 		som = mSelecionada.getSom(iSelecionado);
-		som.visualiza();
 	}
 	
 	public void tocarMelodia(){
 		som = mSelecionada.getSom(iSelecionado);		
 		som.salvawave();
-		som.tocawave();
 		som.visualiza();
 	}
 	public void alterarInstrumento(Dispositivo novo){

@@ -17,7 +17,7 @@ public class Gui extends Frame implements ActionListener, ListSelectionListener{
 		this.tocador = tocador;
 		
 		this.setLocation(new Point (200,500));
-		this.setBackground(new Color(232, 149, 149));
+		this.setBackground(new Color(171, 245, 255));
 		
 		setLayout(new FlowLayout());
 		
