@@ -15,22 +15,16 @@ public class Tocador {
 		i3 = new Instrumento3();
 		iSelecionado = i3;//default
 		melodias = new Melodias();
-		mSelecionada = melodias.melodia7;
+		mSelecionada = melodias.melodia1;
 		som = mSelecionada.getSom(iSelecionado);
 		som.visualiza();
 	}
 	
 	public void tocarMelodia(){
-		som = mSelecionada.getSom(iSelecionado);
+		som = mSelecionada.getSom(iSelecionado);		
 		som.salvawave();
 		som.tocawave();
 		som.visualiza();
-	}
-	public void tocarNota(float frequencia){
-		iSelecionado.setFrequencia(frequencia);
-		som = new Som(iSelecionado,2);
-		som.salvawave();
-		som.tocawave();
 	}
 	public void alterarInstrumento(Dispositivo novo){
 		iSelecionado = novo;

@@ -9,7 +9,7 @@ public class Melodias {
 	Melodia nossaMelodia;
 	
 	public Melodias(){
-		melodia1 = Escala.diatonicaMaiorTemperada();
+		melodia1 = minhaMelodia(); //Escala.diatonicaMaiorTemperada();
 		melodia2 = Tema.tema_bwv775_invencao4_esquerda();
 		melodia3 = Tema.tema_bwv775_invencao4_direita();
 		melodia4 = Tema.tema_aa_drawing_quintet_flauta();
@@ -35,12 +35,12 @@ public class Melodias {
 		nossoAdd(0.6f, 0); //Fazer pausa
 		
 		//Comeca a cantarolar
-		nossoAdd(0.7f, 2*DO4);
-		nossoAdd(0.7f, LA4);
-		nossoAdd(0.7f, FA4);
-		nossoAdd(0.7f, DO4);
+		nossoAdd(0.9f, 2*DO4);
+		nossoAdd(0.9f, LA4);
+		nossoAdd(0.9f, FA4);
+		nossoAdd(0.9f, DO4);
 		
-		nossoAdd(0.4f, 0); //Fazer pausa
+		nossoAdd(0.2f, 0); //Fazer pausa
 		
 		nossoAdd(0.4f, RE4);
 		nossoAdd(0.4f, MI4);
@@ -51,16 +51,16 @@ public class Melodias {
 		
 		nossoAdd(0.4f, 0); //Fazer pausa
 		nossoAdd(0.8f, SOL4);
-		nossoAdd(0.8f, 2*DO4);
+		nossoAdd(0.9f, 2*DO4);
 		nossoAdd(0.8f, LA4);
 		nossoAdd(0.8f, FA4);
 		
-		nossoAdd(0.4f, 0); //Fazer pausa
+		nossoAdd(0.3f, 0); //Fazer pausa
 		nossoAdd(0.4f, RE4);
 		nossoAdd(0.4f, MI4);
 		nossoAdd(0.4f, FA4);
 		nossoAdd(0.8f, SOL4);
-		nossoAdd(0.5f, LA4);
+		nossoAdd(0.4f, LA4);
 		nossoAdd(0.8f, SOL4);
 		
 		nossoAdd(0.4f, 0); //Fazer pausa
@@ -72,6 +72,18 @@ public class Melodias {
 		nossoAdd(0.4f, LA4);
 		nossoAdd(0.4f, SOL4);
 		nossoAdd(0.4f, FA4);
+		
+		nossoAdd(0.4f, 0); //Fazer pausa
+		nossoAdd(0.4f, SOL4);
+		nossoAdd(0.7f, LA4);
+		nossoAdd(0.4f, FA4);
+		nossoAdd(0.7f, RE4);
+		nossoAdd(0.4f, FA4);
+		nossoAdd(0.4f, RE4);
+		nossoAdd(0.6f, DO4);
+		
+		nossoAdd(0.4f, 0); //Fazer pausa
+		
 		
 		return nossaMelodia;
 	}
