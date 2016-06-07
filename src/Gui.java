@@ -16,9 +16,12 @@ public class Gui extends Frame implements ActionListener, ListSelectionListener{
 		
 		this.tocador = tocador;
 		
+		this.setLocation(new Point (200,500));
+		this.setBackground(new Color(171, 245, 255));
+		
 		setLayout(new FlowLayout());
 		
-		String[] listaMelodias = {"Escala Temperada Maior", "bwt 775 invencao 4 esquerda     ", "bwt 775 invencao 4 direita", "drawing quintet flauta","bwt 988 v03"};
+		String[] listaMelodias = {"Minha Melodia", "bwt 775 invencao 4 esquerda     ", "bwt 775 invencao 4 direita", "drawing quintet flauta","bwt 988 v03"};
 		String[] listaInstrumentos = {"Instrumento 1     ","Instrumento 2","Instrumento 3"};
 		
 		listaI = new JList<String>(listaInstrumentos);
@@ -36,58 +39,6 @@ public class Gui extends Frame implements ActionListener, ListSelectionListener{
 		play = new Button("Toca Melodia");
 		play.addActionListener(this);
 		add(play);
-		
-		C1 = new Button("C");
-		C1.addActionListener(this);
-		add(C1);
-		
-		Cs = new Button("C#");
-		Cs.addActionListener(this);
-		add(Cs);
-		
-		D = new Button("D");
-		D.addActionListener(this);
-		add(D);
-		
-		Ds = new Button("D#");
-		Ds.addActionListener(this);
-		add(Ds);
-		
-		E = new Button("E");
-		E.addActionListener(this);
-		add(E);
-		
-		F = new Button("F");
-		F.addActionListener(this);
-		add(F);
-		
-		Fs = new Button("F#");
-		Fs.addActionListener(this);
-		add(Fs);
-		
-		G = new Button("G");
-		G.addActionListener(this);
-		add(G);
-		
-		Gs = new Button("G#");
-		Gs.addActionListener(this);
-		add(Gs);
-		
-		A = new Button("A");
-		A.addActionListener(this);
-		add(A);
-		
-		As = new Button("A#");
-		As.addActionListener(this);
-		add(As);
-		
-		B = new Button("B");
-		B.addActionListener(this);
-		add(B);
-		
-		C2 = new Button("C");
-		C2.addActionListener(this);
-		add(C2);
 		
 		addWindowListener(new WindowAdapter(){
 		  	public void windowClosing(WindowEvent e){
@@ -141,33 +92,7 @@ public class Gui extends Frame implements ActionListener, ListSelectionListener{
 			tocador.tocarMelodia();
 			return;
 		}
-		if (source == C1)
-			frequencia = 261.626f;
-		if (source == Cs)
-			frequencia = 277.183f;
-		if (source == D)
-			frequencia = 293.665f;
-		if (source == Ds)
-			frequencia = 311.127f;
-		if (source == E)
-			frequencia = 329.628f;
-		if (source == F)
-			frequencia = 349.228f;
-		if (source == Fs)
-			frequencia = 369.994f;
-		if (source == G)
-			frequencia = 391.995f;
-		if (source == Gs)
-			frequencia = 415.305f;
-		if (source == A)
-			frequencia = 440.000f;
-		if (source == As)
-			frequencia = 466.164f;
-		if (source == B)
-			frequencia = 493.883f;
-		if (source == C2)
-			frequencia = 523.251f;
-		tocador.tocarNota(frequencia);
+		
 		return;
 	}
 	

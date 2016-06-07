@@ -10,7 +10,6 @@ public class Instrumento1 extends Dispositivo{
 		atualiza();
 	}
 	
-	
 	private void atualiza(){
 		Curva c_amplitudeRuido = new Curva(360);
 		Float tonal = 0.00001f;
