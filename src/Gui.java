@@ -21,7 +21,7 @@ public class Gui extends Frame implements ActionListener, ListSelectionListener{
 		
 		setLayout(new FlowLayout());
 		
-		String[] listaMelodias = {"Daisy Bell", "bwt 775 invencao 4 esquerda     ", "bwt 775 invencao 4 direita", "drawing quintet flauta","bwt 988 v03"};
+		String[] listaMelodias = {"Daisy Bell", "bwt 775 invencao 4 esquerda     123", "bwt 775 invencao 4 direita", "drawing quintet flauta","bwt 988 v03"};
 		String[] listaInstrumentos = {"Instrumento 1","Instrumento 2","Instrumento 3"};
 		
 		listaI = new JList<String>(listaInstrumentos);
