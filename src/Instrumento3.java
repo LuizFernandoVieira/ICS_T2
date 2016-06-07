@@ -36,7 +36,7 @@ public class Instrumento3 extends Dispositivo{
 		aux = frequencia/1000;//escalonamento
 		aux = 0.0075f*aux;
 		oscAux = new Oscilador(aux,5,0);
-		ruido = new Ruido(aux,10,0);
+		ruido = new Ruido(aux,10*aux,0);
 		
 		soma1 = new Somador(oscAux,ruido);
 		soma2 = new Somador(e_frequenciaAux,soma1);
